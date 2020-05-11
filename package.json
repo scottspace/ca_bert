@@ -10,6 +10,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "csv-parser": "^2.3.2",
+    "fs": "0.0.1-security",
     "get-stream": "^5.1.0",
     "into-stream": "^5.1.1",
     "vue": "^2.6.11",
