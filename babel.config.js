@@ -1,11 +1,13 @@
 module.exports = {
-  chainWebpack: config => {
-    config.module
-      .rule('raw')
-      .test(/\.txt$/)
-      .use('raw-loader')
-      .loader('raw-loader')
-      .end()
+  module: { 
+    rules: [
+      {
+        test: /\.txt$/,
+        use: [
+          'raw-loader'
+        ]
+      }
+    ]
   },
   presets: [
     '@vue/cli-plugin-babel/preset'
