@@ -9,15 +9,17 @@
           <span class="username">{{post.username}}</span>
         </div>
     </div>
-    <div class="image-container"
-      :class="post.filter"
-      :style="{ backgroundImage: 'url(' + post.postImage + ')' }">
-    </div>
+    <a href="{{post.url}}" target="_blank">
+      <div class="image-container"
+        :class="post.filter"
+        :style="{ backgroundImage: 'url(' + post.postImage + ')' }">
+      </div>
+    </a>
     <div class="content">
       <div class="heart">
         <i class="far fa-heart fa-lg"></i>
       </div>
-      <p class="likes">{{post.likes}} likes</p>
+      <p class="likes">Topic {{post.likes}}</p>
       <p class="caption"><span>{{post.username}}</span> {{post.caption}}</p>
     </div>
   </div>
