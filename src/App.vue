@@ -24,16 +24,14 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
-import Bigquery from "./js/bigquery.min"
+import BigQuery from "@google-cloud/bigquery";
 
 function doit() {
     // [START bigquery_get_table]
     // Import the Google Cloud client library
     console.log("inside doit()");
 
-    //const {BigQuery} = require('@google-cloud/bigquery');
-    //const { bigquery, auth } = Bigquery;
-    //const bigquery = new BigQuery();
+    const bigquery = new BigQuery();
   
     async function getTable() {
   
