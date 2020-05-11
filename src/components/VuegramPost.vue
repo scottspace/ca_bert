@@ -9,7 +9,7 @@
           <span class="username">{{post.username}}</span>
         </div>
     </div>
-    <a :href="post.url" target="_blank">
+    <a :href="post.url">
       <div class="image-container"
         :class="post.filter"
         :style="{ backgroundImage: 'url(' + post.postImage + ')' }">
