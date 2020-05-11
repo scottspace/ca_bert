@@ -24,11 +24,11 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
+import neatCsv from './data/neatcsv';
 
 export default {
   name: "App",
   data() {
-    doit();
     return {
       posts,
       filters,
