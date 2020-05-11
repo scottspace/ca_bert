@@ -29,9 +29,10 @@ function doit() {
     // [START bigquery_get_table]
     // Import the Google Cloud client library
     console.log("inside doit()");
-    
-    const {BigQuery} = require('@google-cloud/bigquery');
-    const bigquery = new BigQuery();
+
+    //const {BigQuery} = require('@google-cloud/bigquery');
+    const { bigquery, auth } = Bigquery;
+    //const bigquery = new BigQuery();
   
     async function getTable() {
   
