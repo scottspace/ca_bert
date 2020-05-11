@@ -1,9 +1,3 @@
-import neatCsv from './data/neatcsv';
-import cityText from './data/cities.txt'; 
-
-console.log("In posts.js");
-console.log(neatCsv(cityText));
-
 const posts = [
     {
       username: "socleansofreshh",
@@ -15,7 +9,6 @@ const posts = [
       caption: "When you're ready for summer '18 ☀️",
       filter: "perpetua"
     },
-
     {
       username: "djirdehh",
       userImage: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/me2.png",
@@ -32,7 +25,7 @@ const posts = [
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/pug_personal.jpg",
       postImage:
         "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/puppers.jpg",
-      likes: 49,
+      likes: 69,
       hasBeenLiked: false,
       caption: "Current mood 🐶",
       filter: "lofi"
