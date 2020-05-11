@@ -1,3 +1,31 @@
+function main(datasetId = 'my_dataset', tableId = 'my_table') {
+    // [START bigquery_get_table]
+    // Import the Google Cloud client library
+    const {BigQuery} = require('@google-cloud/bigquery');
+    const bigquery = new BigQuery();
+  
+    async function getTable() {
+      // Retrieves table named "my_table" in "my_dataset".
+  
+      /**
+       * TODO(developer): Uncomment the following lines before running the sample
+       */
+      const datasetId = "gdelt_sa";
+      const tableId = "daily_feed";
+  
+      // Retrieve table reference
+      const dataset = bigquery.dataset(datasetId);
+      const [table] = await dataset.table(tableId).get();
+  
+      console.log('Table:');
+      console.log(table.metadata.tableReference);
+    }
+    getTable();
+    // [END bigquery_get_table]
+}
+
+main();
+
 export default [
     {
       username: "socleansofreshh",
