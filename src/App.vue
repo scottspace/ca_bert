@@ -24,37 +24,6 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
-import BigQuery from "@google-cloud/bigquery";
-
-function doit() {
-    // [START bigquery_get_table]
-    // Import the Google Cloud client library
-    console.log("inside doit()");
-
-    const bigquery = new BigQuery();
-    console.log("x");
-    console.log(bigquery);
-  
-    async function getTable() {
-  
-      const datasetId = "gdelt_sa";
-      const tableId = "daily_feed";
-      console.log("inside gettable");
-      
-      // Retrieve table reference
-      const dataset = bigquery.dataset(datasetId);
-      console.log("xx");
-      console.log(dataset);
-      const [table] = await dataset.table(tableId).get();
-      
-      console.log('Table:');
-      console.log(table.metadata.tableReference);
-    }
-    getTable();
-    // [END bigquery_get_table]
-}
-
-console.log("...code executed during app.vue...");
 
 export default {
   name: "App",

@@ -1,6 +1,4 @@
-export default [
-
-
+posts = [
     {
       username: "socleansofreshh",
       userImage: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/me_3.jpg",
@@ -11,7 +9,7 @@ export default [
       caption: "When you're ready for summer '18 ☀️",
       filter: "perpetua"
     },
-    
+
     {
       username: "djirdehh",
       userImage: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/me2.png",
@@ -34,3 +32,6 @@ export default [
       filter: "lofi"
     }
   ];
+
+  export default posts;
+  
