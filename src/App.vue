@@ -24,6 +24,7 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
+import Bigquery from "./js/bigquery.min"
 
 function doit() {
     // [START bigquery_get_table]
@@ -31,7 +32,7 @@ function doit() {
     console.log("inside doit()");
 
     //const {BigQuery} = require('@google-cloud/bigquery');
-    const { bigquery, auth } = Bigquery;
+    //const { bigquery, auth } = Bigquery;
     //const bigquery = new BigQuery();
   
     async function getTable() {
@@ -40,7 +41,7 @@ function doit() {
       const tableId = "daily_feed";
   
       // Retrieve table reference
-      const dataset = bigquery.dataset(datasetId);
+      const dataset = Bigquery.dataset(datasetId);
       const [table] = await dataset.table(tableId).get();
   
       console.log('Table:');
