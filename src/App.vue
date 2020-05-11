@@ -32,16 +32,21 @@ function doit() {
     console.log("inside doit()");
 
     const bigquery = new BigQuery();
+    console.log("x");
+    console.log(bigquery);
   
     async function getTable() {
   
       const datasetId = "gdelt_sa";
       const tableId = "daily_feed";
-  
+      console.log("inside gettable");
+      
       // Retrieve table reference
       const dataset = bigquery.dataset(datasetId);
+      console.log("xx");
+      console.log(dataset);
       const [table] = await dataset.table(tableId).get();
-  
+      
       console.log('Table:');
       console.log(table.metadata.tableReference);
     }
