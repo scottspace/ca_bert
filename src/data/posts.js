@@ -1,4 +1,4 @@
-function main(datasetId = 'my_dataset', tableId = 'my_table') {
+function main() {
     // [START bigquery_get_table]
     // Import the Google Cloud client library
     const {BigQuery} = require('@google-cloud/bigquery');
