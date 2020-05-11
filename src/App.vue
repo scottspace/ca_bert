@@ -24,17 +24,6 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
-import neatCsv from './data/neatcsv';
-import fs from 'fs';
-
-fs.readFile('./data/cities.csv', async (err, data) => {
-  if (err) {
-    console.error(err)
-    return
-  }
-  console.log("Reading csv");
-  console.log(await neatCsv(data))
-});
 
 export default {
   name: "App",

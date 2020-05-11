@@ -1,3 +1,9 @@
+import neatCsv from './data/neatcsv';
+import cityText from './data/cities.txt'; 
+
+console.log("In posts.js");
+console.log(neatCsv(cityText));
+
 const posts = [
     {
       username: "socleansofreshh",
