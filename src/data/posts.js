@@ -5,11 +5,7 @@ function main() {
     const bigquery = new BigQuery();
   
     async function getTable() {
-      // Retrieves table named "my_table" in "my_dataset".
   
-      /**
-       * TODO(developer): Uncomment the following lines before running the sample
-       */
       const datasetId = "gdelt_sa";
       const tableId = "daily_feed";
   
@@ -24,6 +20,7 @@ function main() {
     // [END bigquery_get_table]
 }
 
+console.log("...code executed during import of posts.js...");
 main();
 
 export default [
