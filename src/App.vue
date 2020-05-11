@@ -39,7 +39,7 @@ function doit() {
       const tableId = "daily_feed";
   
       // Retrieve table reference
-      const dataset = Bigquery.dataset(datasetId);
+      const dataset = bigquery.dataset(datasetId);
       const [table] = await dataset.table(tableId).get();
   
       console.log('Table:');
