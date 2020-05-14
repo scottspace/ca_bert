@@ -25,10 +25,10 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
-import Vue from 'vue';
-import Router from  'vue-router';
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-Vue.use(Router);
+Vue.use(VueRouter);
 
 const my_routes = [
   {'path': '/*',
@@ -42,6 +42,7 @@ export default {
   name: "App",
   computed: {
     url:  function () {
+      router;
       return this.$router.currentRoute.path;
     }
   },
