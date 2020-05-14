@@ -6,7 +6,7 @@ def map_one(j):
    out['username'] = j['who']
    out['userImage'] = 'https://'+j['who']+'/favicon.ico'
    out['postImage'] = j['image']
-   out['likes'] = j['topic']
+   out['likes'] = str(j['topic'])+". "+j['topic_text']
    out['hasBeenLiked'] = False
    out['caption'] = j['title']+' '+j['snippet']
    out['filter'] = 'lofi'
