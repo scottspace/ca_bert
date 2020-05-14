@@ -3,7 +3,6 @@
   <div id="app">
     <div class="app-phone">
       <div class="phone-header">
-        <p>I see  {{url}}</p>
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1211695/vue_gram_logo_cp.png" />
       </div>
       <phone-body 
@@ -25,27 +24,9 @@
 import PhoneBody from "./components/PhoneBody";
 import posts from "./data/posts";
 import filters from "./data/filters";
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter);
-
-const my_routes = [
-  {'path': '/*',
-  'name': 'my_name',
-  'componnt': 'Main'}
-];
-
-let router  = new VueRouter({routes: my_routes});
 
 export default {
   name: "App",
-  computed: {
-    url:  function () {
-      router;
-      return this.$router.currentRoute.path;
-    }
-  },
   data() {
     return {
       posts,
