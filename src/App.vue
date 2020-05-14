@@ -30,8 +30,7 @@ export default {
   data() {
     return {
       posts,
-      filters,
-      stories: {}
+      filters
     };
   },
   components: {

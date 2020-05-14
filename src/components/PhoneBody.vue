@@ -26,4 +26,3 @@ export default {
 <style lang="scss" src="../styles/phone-body.scss">
 // Styles from stylesheet
 </style>
-view rawPhoneBody.vue hosted with ❤ by GitHub
